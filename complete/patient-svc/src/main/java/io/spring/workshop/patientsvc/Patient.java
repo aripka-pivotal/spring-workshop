@@ -19,7 +19,7 @@ public class Patient {
 	private String name;
 	
 	@Temporal(TemporalType.DATE)
-	private Date dateofBirth;
+	private Date dateOfBirth;
 
 	public Long getId() {
 		return id;
@@ -37,12 +37,12 @@ public class Patient {
 		this.name = name;
 	}
 
-	public Date getDateofBirth() {
-		return dateofBirth;
+	public Date getDateOfBirth() {
+		return dateOfBirth;
 	}
 
-	public void setDateofBirth(Date dateofBirth) {
-		this.dateofBirth = dateofBirth;
+	public void setDateOfBirth(Date dateofBirth) {
+		this.dateOfBirth = dateofBirth;
 	}
 	
 	
