@@ -16,7 +16,7 @@ public class MessageClientController {
 	@RequestMapping("/message")
 	public String message(){
 		
-		String message = restTemplate.getForObject("http://messenger/config", String.class);
+		String message = restTemplate.getForObject("http://messenger/message", String.class);
 		
 		System.out.println(message);
 		
