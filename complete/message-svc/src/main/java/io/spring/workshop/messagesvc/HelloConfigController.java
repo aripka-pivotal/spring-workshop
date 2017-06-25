@@ -22,7 +22,7 @@ public class HelloConfigController {
 	@Value("${server.port:undefined}")
 	private String serverPort;
 
-	@RequestMapping("/config")
+	@RequestMapping("/message")
 	public Map<String, String> echoValues(){
 		HashMap<String,String> hm = new HashMap<String, String>();
 		
