@@ -18,6 +18,9 @@ public class HelloConfigController {
 	
 	@Value("${hello.message:no hello message found}")
 	private String helloMessage;
+	
+	@Value("${server.port:undefined}")
+	private String serverPort;
 
 	@RequestMapping("/config")
 	public Map<String, String> echoValues(){
@@ -25,6 +28,8 @@ public class HelloConfigController {
 		
 		hm.put("common-message",commonMessage);
 		hm.put("hello-message",helloMessage);
+		hm.put("server-port", serverPort);
+		
 		return hm;
 	}
 }
