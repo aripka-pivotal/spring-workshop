@@ -1,0 +1,12 @@
+package io.spring.workshop.circuitdb;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CircuitDbApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CircuitDbApplication.class, args);
+	}
+}
